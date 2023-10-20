@@ -1,0 +1,77 @@
+.elements {
+  margin: 0 auto;
+  max-width: 880px;
+  margin-top: 46px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  column-gap: 17px;
+  row-gap: 20px;
+}
+
+.elements__card {
+  max-width: 282px;
+  max-height: 361px;
+  border-radius: 10px;
+  line-height: 0;
+}
+
+.elements__card-image {
+  width: 100%;
+  line-height: 0;
+  margin: 0;
+  object-fit: cover;
+}
+
+.elements__content {
+  color: black;
+  height: 79px;
+  background-color: white;
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin: 0;
+  border-radius: 0 0 10px 10px;
+}
+
+.elements__description {
+  font-size: 24px;
+  font-family: Inter;
+  font-weight: 900;
+  margin: 0;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.elements__like-button {
+  display: inline-block;
+  align-self: center;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  background: url(../images/like-button.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 21px;
+  height: 19px;
+  background-size: 100%;
+  transition: 0.3s;
+  border: none;
+}
+
+.elements__like-button:hover {
+  background: url("../images/like-button-hover.png");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+@media screen and (max-width: 544px) {
+  .elements {
+    grid-template-columns: 1fr;
+    margin-top: 36px;
+  }
+  .elements__card {
+    margin: auto;
+  }
+}

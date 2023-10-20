@@ -1,0 +1,16 @@
+@import url("./normalize.css");
+@import url("../blocks/page.css");
+@import url("../blocks/header.css");
+@import url("../blocks/profile.css");
+@import url("../blocks/elements.css");
+@import url("../blocks/footer.css");
+@import url("../blocks/popup.css");
+@font-face {
+  font-family: "Inter";
+  src: url(../fonts/Inter-Regular.woff2);
+}
+@font-face {
+  font-family: "Inter";
+  src: url(../fonts/Inter-Bold.woff2);
+  font-weight: bold;
+}
