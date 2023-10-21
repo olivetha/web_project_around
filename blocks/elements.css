@@ -18,14 +18,13 @@
 
 .elements__card-image {
   width: 100%;
-  line-height: 0;
   margin: 0;
   object-fit: cover;
 }
 
 .elements__content {
   color: black;
-  height: 79px;
+  line-height: 79px;
   background-color: white;
   width: 100%;
   display: flex;
@@ -42,6 +41,8 @@
   margin: 0;
   text-overflow: ellipsis;
   white-space: nowrap;
+  overflow: hidden;
+  box-sizing: border-box;
 }
 
 .elements__like-button {
@@ -64,6 +65,16 @@
   background: url("../images/like-button-hover.png");
   background-repeat: no-repeat;
   background-position: center;
+}
+
+@media screen and (max-width: 1084px) {
+  .elements {
+    grid-template-columns: repeat(2, 1fr);
+    margin-top: 36px;
+  }
+  .elements__card {
+    margin: auto;
+  }
 }
 
 @media screen and (max-width: 544px) {

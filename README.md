@@ -1,1 +1,27 @@
-# Tripleten web_project_around
+# Project Sprint 5 - JavaScript and DOM Manipulation
+
+![Project Banner](https://unsplash.com/pt-br/fotografias/um-computador-com-teclado-e-mouse-yGQmjh2uOTg)
+
+## Overview
+
+Welcome to the "EUA Afora" project, the fifth installment of the Web Development bootcamp by Triple Ten. In this interactive web page, users can add, remove, and like photos of the most breathtaking landscapes in the USA. This project served as a platform to apply the newly acquired knowledge of JavaScript and DOM, gained during this exciting fifth sprint.
+
+## Project Highlights
+
+- **JavaScript and DOM Manipulation:** We harnessed the power of JavaScript to create dynamic features that allow users to add, remove, and like photos. All of these actions are seamlessly integrated into the Document Object Model (DOM), resulting in a highly interactive and immersive user experience.
+
+- **Responsiveness:** We prioritized responsiveness to ensure that our page is accessible on various devices, including mobile. By using specific media queries tailored to different screen sizes, we set maximum heights and defined widths in percentages, delivering a seamless user experience across diverse devices.
+
+- **Grid Layout:** Our adoption of the "grid" layout system enabled us to effectively structure and organize page elements, ensuring an aesthetically pleasing and well-organized design.
+
+- **CSS Styling:** We invested significant effort in styling, customizing links, background sections, and fonts. This attention to detail results in an attractive and cohesive design, providing an engaging visual experience.
+
+- **Profile Edit Popup:** We implemented JavaScript variables and functions to create a profile edit popup, empowering users to interactively edit their profiles.
+
+## Access the Page
+
+You can explore the captivating landscapes of the United States by visiting our "EUA Afora" page. Just click [here](https://olivetha.github.io/web_project_around/).
+
+## How to Contribute
+
+We welcome contributions from the community to further enhance this project. Whether you want to report issues, submit pull requests, or provide feedback, your input is valued and will help me improve this interactive platform.
