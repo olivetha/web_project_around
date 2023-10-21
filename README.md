@@ -1,6 +1,6 @@
 # Project Sprint 5 - JavaScript and DOM Manipulation
 
-![Project Banner](https://unsplash.com/pt-br/fotografias/um-computador-com-teclado-e-mouse-yGQmjh2uOTg)
+![Project Banner](https://images.unsplash.com/photo-1669023414162-5bb06bbff0ec?auto=format&fit=crop&q=80&w=1932&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D)
 
 ## Overview
 
