@@ -85,4 +85,11 @@
   .elements__card {
     margin: auto;
   }
+  .elements__description {
+    line-height: 79px;
+  }
+  .elements__like-button {
+    width: 21px;
+    height: 19px;
+  }
 }
