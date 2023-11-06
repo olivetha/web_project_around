@@ -4,7 +4,7 @@ const popup = document.querySelector(".popup");
 const buttonClose = document.querySelector(".popup__close-button");
 const profileName = document.querySelector(".profile__name");
 const profileAbout = document.querySelector(".profile__about");
-const form = document.querySelector(".popup__form");
+const form = document.querySelector(".form");
 const inputName = document.querySelector(".form__input_name");
 const inputAbout = document.querySelector(".form__input_about");
 const cardsContainer = document.querySelector(".elements__container");
@@ -12,7 +12,7 @@ const inputTitle = document.querySelector(".form__input_title");
 const inputImage = document.querySelector(".form__input_image");
 const popupAdd = document.querySelector(".popup__add-cards");
 const closeAdd = popupAdd.querySelector(".popup__close-button");
-const addForm = document.querySelector(".popup__form-add");
+const addForm = document.querySelector(".form-add");
 
 editButton.addEventListener("click", () => {
   inputName.value = profileName.textContent;
