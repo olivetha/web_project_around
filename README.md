@@ -1,10 +1,10 @@
-# Project Sprint 5 - JavaScript and DOM Manipulation
+# Project Sprint 5 and 6 - JavaScript Programming Logic and Methods
 
 ![Project Banner](https://images.unsplash.com/photo-1669023414162-5bb06bbff0ec?auto=format&fit=crop&q=80&w=1932&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D)
 
 ## Overview
 
-Welcome to the "EUA Afora" project, the fifth installment of the Web Development bootcamp by Triple Ten. In this interactive web page, users can add, remove, and like photos of the most breathtaking landscapes in the USA. This project served as a platform to apply the newly acquired knowledge of JavaScript and DOM, gained during this exciting fifth sprint.
+Welcome to the "US Around" project, the sixth stage of the Triple Ten Web Development bootcamp. On this interactive web page, users can add, remove, and like photos of the most breathtaking landscapes in the United States. This project served as a platform to apply the newly acquired knowledge of JavaScript and DOM manipulation, gained during this exciting sixth sprint.
 
 ## Project Highlights
 
@@ -17,6 +17,10 @@ Welcome to the "EUA Afora" project, the fifth installment of the Web Development
 - **CSS Styling:** We invested significant effort in styling, customizing links, background sections, and fonts. This attention to detail results in an attractive and cohesive design, providing an engaging visual experience.
 
 - **Profile Edit Popup:** We implemented JavaScript variables and functions to create a profile edit popup, empowering users to interactively edit their profiles.
+
+- **New Photo Addition Popup:** We implemented JavaScript variables and functions to create a popup for adding new photos to the profile, allowing users to edit their content interactively.
+
+- **Photo zoom Popup:** We implemented JavaScript variables and functions to create a popup for expanding the photos added to the profile, enhancing the page's interactivity.
 
 ## Access the Page
 

@@ -7,10 +7,12 @@
   top: 0;
   left: 0;
   border-radius: 10px;
+  transition: opacity 300ms ease-in, visibility 300ms ease-in;
 }
 
 .popup_opened {
   display: block;
+  opacity: 1;
 }
 
 .popup__container {
@@ -20,6 +22,15 @@
   grid-template-areas:
     ". button-close"
     "form .";
+}
+
+.popup__container_image {
+  max-width: fit-content;
+  margin: 90px auto;
+  grid-template-areas:
+    ". button-close"
+    "img ."
+    "txt .";
 }
 .popup__close-button {
   width: 100%;
@@ -37,6 +48,7 @@
 
 .popup__form-section {
   width: 430px;
+  height: 350px;
   text-align: center;
   margin: 0 auto;
   grid-area: form;
@@ -56,6 +68,7 @@
   padding-top: 34px;
   padding-left: 36px;
   padding-bottom: 54px;
+  line-height: 1;
 }
 
 .form__input {
@@ -67,6 +80,7 @@
   font-family: "Inter";
   font-weight: 400;
   word-wrap: break-word;
+  line-height: 1;
 }
 
 .popup__line {
@@ -94,18 +108,47 @@
   opacity: 0.8;
 }
 
+.popup__create-button {
+  width: 358px;
+  height: 50px;
+  cursor: pointer;
+  background-color: #000;
+  border-radius: 2px;
+  color: white;
+  font-size: 18px;
+  font-weight: 400;
+  margin: 18px auto 36.51px;
+  padding: 0;
+}
+
+.popup__create-button:hover {
+  opacity: 0.8;
+}
+
+.popup__image-large {
+  max-width: 75vw;
+  max-height: 75vh;
+  grid-area: img;
+}
+.popup__sub-text {
+  margin-top: 10px;
+  color: #fff;
+  font-size: 12px;
+  font-weight: 400;
+  grid-area: txt;
+}
+
 @media screen and (max-width: 544px) {
   .popup__close-button {
-    padding-top: 0;
-    padding-left: 264px;
-    padding-bottom: 13px;
-    padding-right: 19px;
+    width: 26px;
+    height: 26px;
+    padding: 0;
   }
   .popup__container {
-    width: 282px;
+    width: 308px;
     grid-template-areas:
-      "button-close"
-      "form";
+      ". button-close"
+      "form .";
     margin: 123px auto;
   }
   .popup__form-section {
@@ -131,5 +174,19 @@
     height: 46px;
     font-size: 14px;
     margin: 16px auto 25px;
+  }
+  .popup__create-button {
+    width: 238px;
+    height: 46px;
+    font-size: 14px;
+    margin: 16px auto 25px;
+  }
+  .popup__container_image {
+    max-width: fit-content;
+    margin: 136px auto;
+    grid-template-areas:
+      ". button-close"
+      "img ."
+      "txt .";
   }
 }
