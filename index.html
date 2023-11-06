@@ -31,7 +31,7 @@
             <div class="profile__text-button">
               <h1 class="profile__name">Jacques Cousteau</h1>
               <button class="profile__edit-button" type="button">
-                <img alt="Botao de edicao de perfil" src="./images/edit.png" />
+                <img class="profile__edit-button" alt="Botao de edicao de perfil" src="./images/edit-button.png"/>
               </button>
             </div>
             <h2 class="profile__about">Explorar</h2>
@@ -40,132 +40,119 @@
         <button class="profile__add-button" type="button">
           <img alt="Botao para adicao de fotos" src="./images/Plus.png" />
         </button>
-        <div class="popup">
-          <div class="popup__container">
-            <button class="popup__close-button">
-              <img
-                alt="Botao para fechar popup"
-                src="./images/close-button.png"
-              />
-            </button>
-            <div class="popup__form-section">
-              <h2 class="popup__title">Editar Perfil</h2>
-              <form class="popup__form">
-                <input
-                  type="text"
-                  name="name"
-                  class="form__input form__input_name"
-                  placeholder="Nome"
-                />
-                <img
-                  class="popup__line"
-                  alt="linha divisoria"
-                  src="./images/popup-line.png"
-                />
-                <input
-                  type="text"
-                  name="about"
-                  class="form__input form__input_about"
-                  placeholder="Sobre Mim"
-                />
-                <img
-                  class="popup__line"
-                  alt="linha divisoria"
-                  src="./images/popup-line.png"
-                />
-                <button type="submit" class="popup__submit-button">
-                  Salvar
-                </button>
-              </form>
-            </div>
-          </div>
-        </div>
       </section>
       <section class="element">
         <template id="cards">
-          <ul class="elements">
-            <li class="elements__card">
-              <img
-                class="elements__card-image"
-                alt="Vale com um rio cercado por arvores e
-          uma montanha ao fundo"
-                src="./images/vale.png"
-              />
-              <div class="elements__content">
-                <h2 class="elements__description">Vale de Yosemite</h2>
-                <button class="elements__like-button" type="button"></button>
-              </div>
-            </li>
-            <li class="elements__card">
-              <img
-                class="elements__card-image"
-                alt="Lago azul entre duas montanhas com neve"
-                src="./images/lago-louise.png"
-              />
-              <div class="elements__content">
-                <h2 class="elements__description">Lago Louise</h2>
-                <button class="elements__like-button" type="button"></button>
-              </div>
-            </li>
-            <li class="elements__card">
-              <img
-                class="elements__card-image"
-                alt="Por do sol alaranjado nas montanhas"
-                src="./images/montanhas-care.png"
-              />
-              <div class="elements__content">
-                <h2
-                  class="elements__description elements__description-overflow"
-                >
-                  Montanhas Carecas
-                </h2>
-                <button class="elements__like-button" type="button"></button>
-              </div>
-            </li>
-            <li class="elements__card">
-              <img
-                class="elements__card-image"
-                alt="Duas montanhas em um ceu noturno muito estrelado"
-                src="./images/latemar.png"
-              />
-              <div class="elements__content">
-                <h2 class="elements__description">Latemar</h2>
-                <button class="elements__like-button" type="button"></button>
-              </div>
-            </li>
-            <li class="elements__card">
-              <img
-                class="elements__card-image"
-                alt="Lago escuro com uma montanha ao fundo nevada refletida na agua"
-                src="./images/vanoise.png"
-              />
-              <div class="elements__content">
-                <h2
-                  class="elements__description elements__description-overflow"
-                >
-                  Vanoise National Park
-                </h2>
-                <button class="elements__like-button" type="button"></button>
-              </div>
-            </li>
-            <li class="elements__card">
-              <img
-                class="elements__card-image"
-                alt="Lago com um deck e alguns barcos ancorados com uma montanha ao fundo"
-                src="./images/lago-di-braies.png"
-              />
-              <div class="elements__content">
-                <h2 class="elements__description">Lago di Braies</h2>
-                <button class="elements__like-button" type="button"></button>
-              </div>
-            </li>
-          </ul>
+          <li class="elements__card">
+            <div class="elements__image-container">
+              <button type="button" id="trash" class="elements__trash-button">
+                <img src="./images/Trash.png" alt="Icone Lixo" />
+              </button>
+              <figure class="elements__figure">
+                <img class="elements__card-image" alt="" src="" />
+              </figure>
+            </div>
+            <div class="elements__content">
+              <h2 class="elements__description"></h2>
+              <button
+                class="elements__like-button"
+                type="button"
+                id="like"
+              ></button>
+            </div>
+          </li>
         </template>
+        <ul class="elements__container"></ul>
       </section>
       <footer class="footer">
         <h3 class="footer__copyright">© 2023 Thais Oliveira</h3>
       </footer>
+      <div class="popup popup_profile">
+        <div class="popup__container">
+          <button class="popup__close-button">
+            <img
+              class="popup__close-button"
+              alt="Botao para fechar popup"
+              src="./images/close-button.png"
+            />
+          </button>
+          <div class="popup__form-section">
+            <h2 class="popup__title">Editar Perfil</h2>
+            <form class="popup__form">
+              <input
+                type="text"
+                name="name"
+                class="form__input form__input_name"
+                placeholder="Nome"
+              />
+              <img
+                class="popup__line"
+                alt="linha divisoria"
+                src="./images/popup-line.png"
+              />
+              <input
+                type="text"
+                name="about"
+                class="form__input form__input_about"
+                placeholder="Sobre Mim"
+              />
+              <img
+                class="popup__line"
+                alt="linha divisoria"
+                src="./images/popup-line.png"
+              />
+              <button type="submit" class="popup__submit-button">Salvar</button>
+            </form>
+          </div>
+        </div>
+      </div>
+      <div class="popup popup__add-cards">
+        <div class="popup__container">
+          <button class="popup__close-button" type="button">
+            <img class="popup__close-button"
+              alt="Botao para fechar popup"
+              src="./images/close-button.png"
+            />
+          </button>
+          <div class="popup__form-section">
+            <h2 class="popup__title">Novo local</h2>
+            <form class="popup__form popup__form-add">
+              <input
+                type="text"
+                name="title"
+                class="form__input form__input_title"
+                placeholder="Título"
+              />
+              <img
+                class="popup__line"
+                alt="linha divisoria"
+                src="./images/popup-line.png"
+              />
+              <input
+                type="text"
+                name="image"
+                class="form__input form__input_image"
+                placeholder="Link de imagem"
+              />
+              <img
+                class="popup__line"
+                alt="linha divisoria"
+                src="./images/popup-line.png"
+              />
+              <button type="submit" class="popup__create-button">Criar</button>
+            </form>
+          </div>
+        </div>
+      </div>
+      <div class="popup popup_full">
+        <div class="popup__container popup__container_image" id="image">
+          <button type="button" class="popup__close-button" id="close-image">
+            <img src="./images/close-button.png" alt="Botao para fechar popup" class="popup__close-button"/>
+          </button>
+          <img src=" " alt=" " class="popup__image-large" />
+          <p class="popup__sub-text"></p>
+        </div>
+      </div>
       <script src="./scripts/script.js"></script>
-    </div>
   </body>
 </html>
