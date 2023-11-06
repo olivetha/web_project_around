@@ -10,7 +10,7 @@ const inputAbout = document.querySelector(".form__input_about");
 const cardsContainer = document.querySelector(".elements__container");
 const inputTitle = document.querySelector(".form__input_title");
 const inputImage = document.querySelector(".form__input_image");
-const popupAdd = document.querySelector(".popup__add_cards");
+const popupAdd = document.querySelector(".popup__add");
 const closeAdd = popupAdd.querySelector(".popup__close-button");
 const addForm = document.querySelector(".form-add");
 
