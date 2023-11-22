@@ -1,18 +1,19 @@
 const editButton = document.querySelector(".profile__edit-button");
 const addButton = document.querySelector(".profile__add-button");
-const popup = document.querySelector(".popup");
+const popup = document.querySelector(".popup_profile");
 const buttonClose = document.querySelector(".popup__close-button");
 const profileName = document.querySelector(".profile__name");
 const profileAbout = document.querySelector(".profile__about");
-const form = document.querySelector(".form");
-const inputName = document.querySelector(".form__input_name");
-const inputAbout = document.querySelector(".form__input_about");
+const form = document.querySelector(".popup__form");
+const inputName = document.querySelector(".popup__input_name");
+const inputAbout = document.querySelector(".popup__input_about");
 const cardsContainer = document.querySelector(".elements__container");
-const inputTitle = document.querySelector(".form__input_title");
-const inputImage = document.querySelector(".form__input_image");
+const inputTitle = document.querySelector(".popup__input_title");
+const inputImage = document.querySelector(".popup__input_image");
 const popupAdd = document.querySelector(".popup_add");
 const closeAdd = popupAdd.querySelector(".popup__close-button");
 const addForm = document.querySelector(".form-add");
+const fullImage = document.querySelector(".popup_full");
 
 editButton.addEventListener("click", () => {
   inputName.value = profileName.textContent;
@@ -81,7 +82,6 @@ function addCard(card) {
     likeButton.classList.toggle("elements__like-button_click");
   });
 
-  const fullImage = document.querySelector(".popup_full");
   cardImage.addEventListener("click", () => {
     fullImage.classList.add("popup_opened");
     const imageElement = document.querySelector(".popup__image-large");
@@ -119,5 +119,23 @@ function handleCardFormSubmit(evt) {
   };
   addCard(card);
   popupAdd.classList.remove("popup_opened");
+  document.getElementById("add-card").reset();
 }
 addForm.addEventListener("submit", handleCardFormSubmit);
+
+function escapePopup(evt) {
+  if (evt.key === "Escape") {
+    popup.classList.remove("popup_opened");
+    popupAdd.classList.remove("popup_opened");
+    fullImage.classList.remove("popup_opened");
+  }
+  evt.target.removeEventListener("keydown", escapePopup);
+}
+document.addEventListener("keydown", escapePopup);
+
+function onClick(evt) {
+  evt.target.classList.remove("popup_opened");
+}
+popup.addEventListener("click", onClick);
+fullImage.addEventListener("click", onClick);
+popupAdd.addEventListener("click", onClick);

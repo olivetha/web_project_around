@@ -71,7 +71,7 @@
       <footer class="footer">
         <h3 class="footer__copyright">© 2023 Thais Oliveira</h3>
       </footer>
-      <div class="popup popup_profile">
+      <div class="popup popup_profile" id="pop">
         <div class="popup__container">
           <button class="popup__close-button">
             <img
@@ -82,36 +82,49 @@
           </button>
           <div class="popup__form-section">
             <h2 class="popup__title">Editar Perfil</h2>
-            <form class="form">
-              <input
-                type="text"
-                name="name"
-                class="form__input form__input_name"
-                placeholder="Nome"
-              />
-              <img
-                class="popup__line"
-                alt="linha divisoria"
-                src="./images/popup-line.png"
-              />
-              <input
-                type="text"
-                name="about"
-                class="form__input form__input_about"
-                placeholder="Sobre Mim"
-              />
-              <img
-                class="popup__line"
-                alt="linha divisoria"
-                src="./images/popup-line.png"
-              />
-              <button type="submit" class="popup__submit-button">Salvar</button>
+            <form
+              class="popup__form popup__form_profile"
+              novalidate
+              name="profile"
+            >
+              <fieldset class="popup__formset">
+                <label>
+                  <input
+                    type="text"
+                    name="name"
+                    id="name-input"
+                    class="popup__input popup__input_name"
+                    placeholder="Nome"
+                    minlength="2"
+                    maxlength="40"
+                    required
+                  />
+                  <span class="name-input-error"></span>
+                </label>
+
+                <label>
+                  <input
+                    type="text"
+                    name="about"
+                    id="about-input"
+                    class="popup__input popup__input_about"
+                    placeholder="Sobre Mim"
+                    minlength="2"
+                    maxlength="200"
+                    required
+                  />
+                  <span class="about-input-error"></span>
+                </label>
+                <button type="submit" class="popup__submit-button">
+                  Salvar
+                </button>
+              </fieldset>
             </form>
           </div>
         </div>
       </div>
       <div class="popup popup_add">
-        <div class="popup__container">
+        <div class="popup__container" id="cards-form">
           <button class="popup__close-button" type="button">
             <img
               class="popup__close-button"
@@ -121,30 +134,41 @@
           </button>
           <div class="popup__form-section">
             <h2 class="popup__title">Novo local</h2>
-            <form class="form form-add">
-              <input
-                type="text"
-                name="title"
-                class="form__input form__input_title"
-                placeholder="Título"
-              />
-              <img
-                class="popup__line"
-                alt="linha divisoria"
-                src="./images/popup-line.png"
-              />
-              <input
-                type="text"
-                name="image"
-                class="form__input form__input_image"
-                placeholder="Link de imagem"
-              />
-              <img
-                class="popup__line"
-                alt="linha divisoria"
-                src="./images/popup-line.png"
-              />
-              <button type="submit" class="popup__create-button">Criar</button>
+            <form
+              class="popup__form form-add"
+              name="add-card"
+              id="add-card"
+              novalidate
+            >
+              <fieldset class="popup__formset">
+                <label>
+                  <input
+                    type="text"
+                    name="title"
+                    id="title-input"
+                    class="popup__input popup__input_title"
+                    placeholder="Título"
+                    required
+                    minlength="2"
+                    maxlength="30"
+                  />
+                  <span class="title-input-error"></span>
+                </label>
+                <label>
+                  <input
+                    type="url"
+                    name="image"
+                    id="image-input"
+                    class="popup__input popup__input_image"
+                    placeholder="Link de imagem"
+                    required
+                  />
+                  <span class="image-input-error"></span>
+                </label>
+                <button type="submit" class="popup__submit-button">
+                  Criar
+                </button>
+              </fieldset>
             </form>
           </div>
         </div>
@@ -163,6 +187,7 @@
         </div>
       </div>
       <script src="./scripts/script.js"></script>
+      <script src="./scripts/validate.js"></script>
     </div>
   </body>
 </html>
