@@ -106,10 +106,6 @@
   opacity: 1;
 }
 
-.popup__input_type_error {
-  border-bottom: 1px #ff0000 solid;
-}
-
 .popup__error_visible {
   opacity: 1;
   font-size: 12px;
@@ -167,10 +163,6 @@
 
 .popup__formset {
   border: none;
-}
-
-.text-color {
-  opacity: 1;
 }
 
 @media screen and (max-width: 544px) {
