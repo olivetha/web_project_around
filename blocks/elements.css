@@ -7,7 +7,7 @@
   padding: 0;
   flex-wrap: wrap;
   justify-content: center;
-  font-family: Inter;
+  font-family: "Inter", Arial, sans-serif;
   color: #000;
   column-gap: 17px;
   row-gap: 20px;
@@ -38,15 +38,16 @@
 
 .elements__content {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
   background-color: white;
-  padding: 10px;
+  align-items: center;
+  height: 79px;
   border-radius: 0 0 10px 10px;
 }
 
 .elements__description {
   font-size: 24px;
-  font-family: Inter;
+  font-family: inherit;
   font-weight: 900;
   margin: 0;
   text-overflow: ellipsis;

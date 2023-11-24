@@ -28,7 +28,6 @@ const hasInvalidInput = (inputList) => {
 };
 
 const toggleButtonState = (inputList, buttonElement) => {
-  console.log(hasInvalidInput(inputList));
   if (hasInvalidInput(inputList)) {
     buttonElement.classList.add("popup__button_disabled");
   } else {
@@ -50,11 +49,40 @@ const setEventListeners = (formElement) => {
   });
 };
 
+const resetFormState = (formElement) => {
+  const inputList = Array.from(formElement.querySelectorAll(".popup__input"));
+  const buttonElement = formElement.querySelector(".popup__submit-button");
+
+  inputList.forEach((inputElement) => {
+    hideInputError(formElement, inputElement);
+    inputElement.value = "";
+    toggleButtonState(inputList, buttonElement);
+  });
+};
+
 const enableValidation = () => {
   const formList = Array.from(document.querySelectorAll(".popup__form"));
   formList.forEach((formElement) => {
     formElement.addEventListener("submit", (evt) => {
       evt.preventDefault();
+      if (
+        !hasInvalidInput(
+          Array.from(formElement.querySelectorAll(".popup__input"))
+        )
+      ) {
+        resetFormState(formElement);
+      }
+    });
+    formElement.addEventListener("keydown", (evt) => {
+      if (evt.key === "Enter") {
+        if (
+          hasInvalidInput(
+            Array.from(formElement.querySelectorAll(".popup__input"))
+          )
+        ) {
+          evt.preventDefault();
+        }
+      }
     });
 
     const fieldsetList = Array.from(
