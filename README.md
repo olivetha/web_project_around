@@ -1,10 +1,10 @@
-# Project Sprint 5, 6 and 7 - JavaScript Programming Logic and Methods
+# Project Around US
 
 ![Project Banner](https://images.unsplash.com/photo-1669023414162-5bb06bbff0ec?auto=format&fit=crop&q=80&w=1932&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D)
 
 ## Overview
 
-Welcome to the "US Around" project, the seventh stage of the Triple Ten Web Development bootcamp. On this interactive web page, users can add, remove, and like photos of the most breathtaking landscapes in the United States. This project served as a platform to apply the newly acquired knowledge of JavaScript and DOM manipulation, gained during this exciting seventh sprint.
+Welcome to the "US Around" project, the eighth stage of the Triple Ten Web Development bootcamp. On this interactive web page, users can add, remove, and like photos of the most breathtaking landscapes in the United States. This project served as a platform to apply the newly acquired knowledge of JavaScript, DOM manipulation and Object-Oriented Programming (OOP) gained during this exciting eighth sprint.
 
 ## Project Highlights
 
@@ -25,6 +25,8 @@ Welcome to the "US Around" project, the seventh stage of the Triple Ten Web Deve
 - **Keyboard Events:** New event listeners have been added to enable the user to close popup windows with the Esc key or by clicking anywhere outside the page.
 
 - **Form Validation:** I added instant form validation script to allow a higher level of control and flexibility. Forms are one of the main ways our users interact with our website, and instant validation is much more intuitive to use because it is easier and more enjoyable for our users to interact with. I understood that creating a form involves much more than simply programming and sending it to the server. To make it clear and user-friendly, it was necessary to program the validation in a clear and intuitive way.
+
+- **Object-Oriented Programming (OOP):** This project marked a significant milestone in my development journey as I incorporated Object-Oriented Programming principles. These principles allowed me to design this code in a more modular and structured way, promoting code reusability and maintainability. With a focus on encapsulation, inheritance, polymorphism, and abstraction, we enhanced the overall organization and efficiency of the codebase.
 
 ## Access the Page
 
