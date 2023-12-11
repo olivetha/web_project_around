@@ -30,7 +30,7 @@ Welcome to the "US Around" project, the eighth stage of the Triple Ten Web Devel
 
 ## Access the Page
 
-You can explore the captivating landscapes of the United States by visiting our "EUA Afora" page. Just click [here](https://olivetha.github.io/web_project_around/).
+You can explore the captivating landscapes of the United States by visiting our "US Around" page. Just click [here](https://olivetha.github.io/web_project_around/).
 
 ## How to Contribute
 
