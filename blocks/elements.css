@@ -38,7 +38,7 @@
 
 .elements__content {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-between;
   background-color: white;
   align-items: center;
   height: 79px;
@@ -54,6 +54,7 @@
   white-space: nowrap;
   overflow: hidden;
   box-sizing: border-box;
+  margin-left: 21px;
 }
 
 .elements__like-button {
@@ -69,6 +70,7 @@
   height: 19px;
   background-size: 100%;
   transition: 0.3s;
+  margin-right: 30px;
 }
 
 .elements__like-button_click {
