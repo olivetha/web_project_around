@@ -4,7 +4,7 @@
 
 ## Overview
 
-Welcome to the "US Around" project, the eighth stage of the Triple Ten Web Development bootcamp. On this interactive web page, users can add, remove, and like photos of the most breathtaking landscapes in the United States. This project served as a platform to apply the newly acquired knowledge of JavaScript, DOM manipulation and Object-Oriented Programming (OOP) gained during this exciting eighth sprint.
+Welcome to the "US Around" project, the nineth stage of the Triple Ten Web Development bootcamp. On this interactive web page, users can add, remove, and like photos of the most breathtaking landscapes in the United States. This project served as a platform to apply the newly acquired knowledge of JavaScript, DOM manipulation and Object-Oriented Programming (OOP) gained during this exciting eighth sprint.
 
 ## Project Highlights
 
