@@ -1,10 +1,11 @@
-import FormValidator from "./FormValidator.js";
-import Card from "./Card.js";
-import Section from "./Section.js";
-import Popup from "./Popup.js";
-import PopupWithImage from "./PopupWithImage.js";
-import PopupWithForm from "./PopupWithForm.js";
-import UserInfo from "./UserInfo.js";
+import "./index.css";
+import FormValidator from "../components/FormValidator.js";
+import Card from "../components/Card.js";
+import Section from "../components/Section.js";
+import Popup from "../components/Popup.js";
+import PopupWithImage from "../components/PopupWithImage.js";
+import PopupWithForm from "../components/PopupWithForm.js";
+import UserInfo from "../components/UserInfo.js";
 import {
   addForm,
   initialCards,
@@ -14,7 +15,7 @@ import {
   inputTitle,
   inputImage,
   popupAdd,
-} from "./constants.js";
+} from "../components/constants.js";
 
 const popupWithImage = new PopupWithImage(".popup_full");
 popupWithImage.setEventListeners();
@@ -68,10 +69,10 @@ openFormButton.addEventListener("click", () => {
 });
 
 const popupAddForm = new PopupWithForm(".popup_add", (formData) => {
-  addCard({
+  const addCard = {
     name: formData.title,
     link: formData.image,
-  });
+  };
 });
 popupAddForm.setEventListeners();
 openAddButton.addEventListener("click", () => {

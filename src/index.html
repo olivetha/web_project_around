@@ -4,44 +4,32 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Ao redor dos EUA</title>
-    <link rel="stylesheet" href="./styles/index.css" />
   </head>
   <body>
     <div class="page">
       <header class="header">
-        <img
-          class="header__logo"
-          alt="Logo Around the US"
-          src="./images/Vector.png"
-        />
-        <img
-          class="header__line"
-          alt="Linha cinza divisória"
-          src="./images/Line.png"
-        />
+        <img class="header__logo" alt="Logo Around the US" src= <%=
+        require('./images/Vector.png')%> /> <img class="header__line" alt="Linha
+        cinza divisória" src= <%=require('./images/Line.png')%> />
       </header>
       <section class="profile">
         <div class="profile__container">
-          <img
-            class="profile__image"
-            alt="Foto de perfil do Jacques"
-            src="./images/Avatar.png"
-          />
+          <img class="profile__image" alt="Foto de perfil do Jacques" src=
+          <%=require('./images/Avatar.png')%> />
           <div class="profile__info">
             <div class="profile__text-button">
               <h1 class="profile__name">Jacques Cousteau</h1>
               <button class="profile__edit-button" type="button">
-                <img
-                  alt="Botao de edicao de perfil"
-                  src="./images/edit-button.png"
-                />
+                <img alt="Botao de edicao de perfil" src=
+                <%=require('./images/edit-button.png')%> />
               </button>
             </div>
             <h2 class="profile__about">Explorar</h2>
           </div>
         </div>
         <button class="profile__add-button" type="button">
-          <img alt="Botao para adicao de fotos" src="./images/Plus.png" />
+          <img alt="Botao para adicao de fotos" src=
+          <%=require('./images/Plus.png')%> />
         </button>
       </section>
       <section class="elements">
@@ -50,7 +38,7 @@
           <li class="elements__card">
             <div class="elements__image-container">
               <button type="button" id="trash" class="elements__trash-button">
-                <img src="./images/Trash.png" alt="Icone Lixo" />
+                <img src= <%=require('./images/Trash.png')%> alt="Icone Lixo" />
               </button>
               <figure class="elements__figure">
                 <img class="elements__card-image" alt=" " src=" " />
@@ -71,13 +59,11 @@
         <h3 class="footer__copyright">© 2023 Thais Oliveira</h3>
       </footer>
       <div class="overlay" id="overlay-profile">
-        <div class="popup popup_profile popup__overlay">
+        <div class="popup popup_profile">
           <div class="popup__container">
             <button class="popup__close-button" id="close-profile">
-              <img
-                alt="Botao para fechar popup"
-                src="./images/close-button.png"
-              />
+              <img alt="Botao para fechar popup" src=
+              <%=require('./images/close-button.png')%> />
             </button>
             <div class="popup__form-section">
               <h2 class="popup__title">Editar Perfil</h2>
@@ -124,13 +110,11 @@
         </div>
       </div>
       <div class="overlay" id="overlay-add">
-        <div class="popup popup_add popup__overlay">
+        <div class="popup popup_add">
           <div class="popup__container" id="cards-form">
             <button class="popup__close-button" type="button" id="close-add">
-              <img
-                alt="Botao para fechar popup"
-                src="./images/close-button.png"
-              />
+              <img alt="Botao para fechar popup" src=
+              <%=require('./images/close-button.png')%> />
             </button>
             <div class="popup__form-section">
               <h2 class="popup__title">Novo local</h2>
@@ -175,13 +159,11 @@
         </div>
       </div>
       <div class="overlay" id="overlay-full">
-        <div class="popup popup_full popup__overlay">
+        <div class="popup popup_full">
           <div class="popup__container popup__container_image" id="image">
             <button type="button" class="popup__close-button" id="close-image">
-              <img
-                src="./images/close-button.png"
-                alt="Botao para fechar popup"
-              />
+              <img src= <%=require('./images/close-button.png')%> alt="Botao
+              para fechar popup" />
             </button>
             <img src=" " alt=" " class="popup__image-large" />
             <p class="popup__sub-text"></p>

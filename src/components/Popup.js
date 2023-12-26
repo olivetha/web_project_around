@@ -1,6 +1,5 @@
 export default class Popup {
   constructor(popupSelector) {
-    console.log("Popup constructor called with selector:", popupSelector);
     this._popup = document.querySelector(popupSelector);
     this._handleEscClose = this._handleEscClose.bind(this);
   }
@@ -16,9 +15,7 @@ export default class Popup {
   }
 
   _handleEscClose(evt) {
-    console.log("Handling ESC key event on:", this._popup);
     if (evt.key === "Escape") {
-      console.log("apertou o esc");
       this.close();
     }
   }
