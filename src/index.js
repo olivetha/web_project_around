@@ -1,3 +1,4 @@
+import "./styles/index.css";
 import FormValidator from "./FormValidator.js";
 import Card from "./Card.js";
 import Section from "./Section.js";
@@ -68,10 +69,10 @@ openFormButton.addEventListener("click", () => {
 });
 
 const popupAddForm = new PopupWithForm(".popup_add", (formData) => {
-  const addCard = {
+  addCard({
     name: formData.title,
     link: formData.image,
-  };
+  });
 });
 popupAddForm.setEventListeners();
 openAddButton.addEventListener("click", () => {

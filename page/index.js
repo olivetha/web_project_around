@@ -68,10 +68,10 @@ openFormButton.addEventListener("click", () => {
 });
 
 const popupAddForm = new PopupWithForm(".popup_add", (formData) => {
-  const addCard = {
+  addCard({
     name: formData.title,
     link: formData.image,
-  };
+  });
 });
 popupAddForm.setEventListeners();
 openAddButton.addEventListener("click", () => {
