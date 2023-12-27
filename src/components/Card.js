@@ -31,9 +31,11 @@ export default class Card {
         this._handleLike();
       });
 
-    this._element.querySelector(".elements__trash-button").addEventListener("click", () => {
-      this._handleDelete();
-    });
+    this._element
+      .querySelector(".elements__trash-button")
+      .addEventListener("click", () => {
+        this._handleDelete();
+      });
 
     this._imageElement.addEventListener("click", () => {
       this._handleImageClick();

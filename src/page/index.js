@@ -20,6 +20,11 @@ import {
 const popupWithImage = new PopupWithImage(".popup_full");
 popupWithImage.setEventListeners();
 
+function createCard(data, templateSelector, popupWithImage) {
+  const card = new Card(data, templateSelector, popupWithImage);
+  return card.getCardElement();
+}
+
 const cardSection = new Section(
   {
     items: initialCards,
@@ -30,11 +35,6 @@ const cardSection = new Section(
 
 cardSection.render();
 
-function createCard(data, templateSelector, popupWithImage) {
-  const card = new Card(data, templateSelector, popupWithImage);
-  return card.getCardElement();
-}
-
 function handleCardFormSubmit(evt) {
   evt.preventDefault();
 
@@ -43,7 +43,7 @@ function handleCardFormSubmit(evt) {
     link: inputImage.value,
   };
 
-  const cardElement = createCard(cardData, "#cards");
+  const cardElement = createCard(cardData, "#cards", popupWithImage);
   cardSection.addItem(cardElement);
 
   popupAdd.classList.remove("popup_opened");
