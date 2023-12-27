@@ -20,20 +20,20 @@ import {
 const popupWithImage = new PopupWithImage(".popup_full");
 popupWithImage.setEventListeners();
 
-function createCard(data, templateSelector) {
-  const card = new Card(data, templateSelector);
-  return card.getCardElement();
-}
-
 const cardSection = new Section(
   {
     items: initialCards,
-    renderer: (data) => createCard(data, "#cards"),
+    renderer: (data) => createCard(data, "#cards", popupWithImage),
   },
   cardsContainerSelector
 );
 
 cardSection.render();
+
+function createCard(data, templateSelector, popupWithImage) {
+  const card = new Card(data, templateSelector, popupWithImage);
+  return card.getCardElement();
+}
 
 function handleCardFormSubmit(evt) {
   evt.preventDefault();

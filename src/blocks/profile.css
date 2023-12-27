@@ -112,6 +112,7 @@
     line-height: 1.18;
     text-align: center;
     margin: 0 auto;
+    max-width: 230px;
   }
   .profile__edit-button {
     width: 18px;
@@ -125,6 +126,7 @@
     line-height: 1.22;
     text-align: center;
     margin: 0 auto;
+    max-width: 282px;
   }
   .profile__add-button {
     width: 282px;

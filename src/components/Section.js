@@ -5,10 +5,6 @@ export default class Section {
     this._container = containerSelector;
   }
 
-  addItem(element) {
-    this._container.prepend(element);
-  }
-
   render() {
     this._items.forEach((item) => {
       const renderedItem = this._renderer(item);

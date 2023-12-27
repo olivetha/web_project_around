@@ -1,7 +1,7 @@
 import PopupWithImage from "./PopupWithImage.js";
 
 export default class Card {
-  constructor(data, templateSelector) {
+  constructor(data, templateSelector, popupWithImage) {
     this._name = data.name;
     this._link = data.link;
     this._templateSelector = templateSelector;
@@ -11,8 +11,7 @@ export default class Card {
     this._captionElement = this._element.querySelector(
       ".elements__description"
     );
-    this._popupWithImage = new PopupWithImage(".popup_full");
-
+    this._popupWithImage = popupWithImage;
     this._setEventListeners();
     this._updateCard();
   }
@@ -32,7 +31,7 @@ export default class Card {
         this._handleLike();
       });
 
-    this._element.querySelector("#trash").addEventListener("click", () => {
+    this._element.querySelector(".elements__trash-button").addEventListener("click", () => {
       this._handleDelete();
     });
 

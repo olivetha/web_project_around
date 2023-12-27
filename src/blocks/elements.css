@@ -66,7 +66,7 @@
   background: url(../images/like-button.png);
   background-repeat: no-repeat;
   background-position: center;
-  width: 21px;
+  min-width: 21px;
   height: 19px;
   background-size: 100%;
   transition: 0.3s;
